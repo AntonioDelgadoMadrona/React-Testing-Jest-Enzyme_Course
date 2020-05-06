@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -19,6 +18,12 @@ class App extends Component {
           onClick={() => this.setState({ counter: this.state.counter + 1 })}
         >
           Increment counter
+      </button>
+        <button
+          data-test="decrement-button"
+          onClick={() => this.setState({ counter: this.state.counter - 1 })}
+        >
+          Decrement counter
       </button>
       </div>
     );

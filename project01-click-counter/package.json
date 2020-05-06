@@ -20,10 +20,9 @@
   },
   "devDependencies": {
     "ajv": "^6.4.0",
-    "babel-plugin-react-remove-properties": "^0.3.0",
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "jest": "^22.4.3",
-    "jest-enzyme": "^6.1.2"
+    "jest-enzyme": "^6.0.0"
   }
 }
