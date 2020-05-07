@@ -8,6 +8,10 @@ export const actionTypes = {
   SET_SECRET_WORD: 'SET_SECRET_WORD',
 };
 
+export const correctGuess = () => {
+  return { type: actionTypes.CORRECT_GUESS }
+};
+
 /**
  * Returns Redux Thunk function that dispatches GUESS_WORD action
  *     and (conditionally) CORRECT_GUESS action
@@ -16,7 +20,7 @@ export const actionTypes = {
  * @returns {function} - Redux Thunk function.
 */
 export const guessWord = (guessedWord) => {
-  return function(dispatch, getState) {
+  return function (dispatch, getState) {
     const secretWord = getState().secretWord;
     const letterMatchCount = getLetterMatchCount(guessedWord, secretWord);
 
