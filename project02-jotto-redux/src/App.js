@@ -7,7 +7,7 @@ import Congrats from './Congrats';
 import Input from './Input';
 import { getSecretWord } from './actions';
 
-export class App extends Component {
+export class UnconnectedApp extends Component {
   /**
    * @method componentDidMount
    * @returns {undefined}
@@ -38,4 +38,4 @@ const mapDispatchToProps = {
   getSecretWord
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(UnconnectedApp);
