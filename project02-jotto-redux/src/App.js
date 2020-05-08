@@ -34,4 +34,8 @@ const mapStateToProps = (state) => {
   return { success, guessedWords, secretWord };
 }
 
-export default connect(mapStateToProps, { getSecretWord })(App);
+const mapDispatchToProps = {
+  getSecretWord
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

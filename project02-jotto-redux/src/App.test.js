@@ -39,4 +39,10 @@ describe('redux properties', () => {
     expect(guessedWordsProp).toBe(guessedWords);
   });
 
+  test('`getSecretWord` action creator is a function on the props', () => {
+    const wrapper = setup();
+    const getSecretWordProp = wrapper.instance().props.getSecretWord;
+    expect(getSecretWordProp).toBeInstanceOf(Function);
+  });
+
 });
