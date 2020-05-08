@@ -54,7 +54,7 @@ describe('render', () => {
       wrapper = setup(initialState);
     });
 
-    test('renders component without error', () => {
+    test('renders component without errors', () => {
       const component = findByTestAttr(wrapper, 'component-input');
       expect(component.length).toBe(1);
     });
@@ -125,5 +125,9 @@ describe('`guessWord`action creator call', () => {
     const guessedWordArg = guessWordMock.mock.calls[0][0];
     expect(guessedWordArg).toBe(guessedWord);
   })
+
+  test('input box clears on submit', () => {
+    expect(wrapper.state('currentGuess')).toBe('');
+  });
 
 })

@@ -13,7 +13,7 @@ export class UnconnectedInput extends Component {
     super(props);
 
     // initialize state
-    this.state = { currentGuess: null }
+    this.state = { currentGuess: '' }
 
     // bind this for submitGuessedWord
     this.submitGuessedWord = this.submitGuessedWord.bind(this);

@@ -46,6 +46,7 @@ export const getSecretWord = () => {
           type: actionTypes.SET_SECRET_WORD,
           payload: res.data
         })
-      });
+      })
+      .catch(err => console.log(err));
   }
 }
